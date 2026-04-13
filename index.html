@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingénieure Agronome & Développeuse logiciel - Création d'ERP agricoles pour l'Afrique">
+    <meta name="author" content="Gisele BAHATI">
+    <meta name="theme-color" content="#1B4332">
+    
+    <title>🌿 Gisele BAHATI - Ingénieure Agronome & Développeuse logiciel</title>
+    
+    <!-- Preconnect pour les ressources externes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Font Awesome 6 (optimisé) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION MODERNE ========== -->
+    <nav class="navbar" aria-label="Navigation principale">
+        <a href="#accueil" class="logo" aria-label="Accueil">
+            🌿 <span>Gisele BAHATI</span>
+        </a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        
+        <div class="nav__links" id="navLinks">
+            <a href="#accueil">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets ERP</a>
+            <a href="#contact">Contact</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <header id="accueil" class="hero">
+            <div class="hero__content">
+                <div class="hero__tag">
+                    <i class="fas fa-seedling" aria-hidden="true"></i>
+                    <span>INGÉNIEURE AGRONOME & DÉVELOPPEUSE LOGICIELLE</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    L'innovation <span class="highlight">Agro-Tech</span> <br>au service de la RDC
+                </h1>
+                
+                <p class="hero__description">
+                    Je conçois des ERP agricoles sur mesure avec Python et d'autres solutions logicielles, 
+                    pour optimiser la production, la traçabilité et la gestion des données sur le terrain africain.
+                </p>
+                
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__number">3+</div>
+                        <div class="stat__label">Projets ERP</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">2+</div>
+                        <div class="stat__label">Modules déployés</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">100%</div>
+                        <div class="stat__label">Adapté terrain</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">24/7</div>
+                        <div class="stat__label">Support technique</div>
+                    </div>
+                </div>
+                
+                <div class="hero__actions">
+                    <a href="#projets" class="btn btn-primary">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        Voir mes projets ERP
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                        Travaillons ensemble
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero__image">
+                <div class="avatar" role="img" aria-label="Photo de profil Gisele BAHATI">
+                    <img src="image_preview.png" alt="Gisele BAHATI - Ingénieure Agronome" loading="eager">
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="section">
+            <div class="grid grid--about">
+                <div class="about__image">
+                    <div class="image-wrapper">
+                        <img src="image_about.png" alt="Gisele BAHATI - Portrait professionnel" class="profile-img" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="about__text">
+                    <h2 class="section__title">
+                        Double compétence : <br><span class="highlight">Agronomie + Développement</span>
+                    </h2>
+                    
+                    <p>Ingénieure Agronome de formation, j'ai choisi de renforcer mon impact grâce au développement logiciel. 
+                    Cette double culture me permet de comprendre les besoins réels des acteurs agricoles congolais 
+                    et d'y répondre avec la puissance de <strong>Python</strong>, <strong>Flask</strong> et des <strong>ERP sur mesure</strong>.</p>
+                    
+                    <p class="mt-2">Mon objectif : réduire les pertes post-récoltes, améliorer la traçabilité 
+                    et connecter les petits producteurs aux marchés via des outils numériques accessibles.</p>
+                    
+                    <div class="skills__list">
+                        <div class="skill">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <strong>Backend:</strong> Python, Flask, Django
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                            <strong>Base de données:</strong> PostgreSQL, SQLite, MySQL
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                            <strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
+                            <strong>Métier:</strong> SIG, Gestion de coopératives, Traçabilité agricole
+                        </div>
+                    </div>
+                    
+                    <a href="gisele-cv.pdf" class="btn-text" download>
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TIMELINE SECTION ========== -->
+        <section id="parcours" class="section" style="background: var(--bg-secondary);">
+            <h2 class="section__title section__title--centered">Mon parcours</h2>
+            <p class="section__subtitle">De l'agronomie à la tech, une évolution naturelle</p>
+            
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2025 - Aujourd'hui</div>
+                        <h3>Développeuse Python & ERP</h3>
+                        <p>Spécialisation en développement d'ERP agricoles avec Flask, PostgreSQL. 
+                        Création de solutions sur mesure pour l'agriculture africaine.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2025</div>
+                        <h3>Formation Développement Full-Stack</h3>
+                        <p>Certification en développement web : HTML/CSS/JS, SQL, Git, Github, déploiement.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__date">2019 - 2023</div>
+                        <h3>Ingénieure Agronome</h3>
+                        <p>Diplômée en agronomie, spécialisation en production végétale 
+                        et systèmes d'information géographique (SIG). Stage terrain en RDC.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== COMPÉTENCES SECTION ========== -->
+        <section id="competences" class="section">
+            <h2 class="section__title section__title--centered">Compétences clés</h2>
+            <p class="section__subtitle">La stack technique qui alimente mes ERP</p>
+            
+            <div class="grid grid--4cols">
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fab fa-python" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">Python & Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Python 3</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">Base de données</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">PostGIS</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">Frontend</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">Jinja2</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card__icon">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">Outils & DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Gunicorn</span>
+                        <span class="tag">Render</span>
+                        <span class="tag">PythonAnywhere</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJETS SECTION AVEC IMAGES ========== -->
+        <section id="projets" class="section" style="background: var(--bg-secondary);">
+            <h2 class="section__title section__title--centered">Projets ERP</h2>
+            <p class="section__subtitle">Des solutions complètes développées pour l'agriculture africaine</p>
+            
+            <div class="projects-stats">
+                <div class="stat-card">
+                    <div class="stat__number">10+</div>
+                    <div class="stat__label">Modules fonctionnels</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat__number">12+</div>
+                    <div class="stat__label">Modèles SQLAlchemy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat__number">4</div>
+                    <div class="stat__label">Niveaux de rôles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat__number">500+</div>
+                    <div class="stat__label">Utilisateurs potentiels</div>
+                </div>
+            </div>
+
+            <div class="grid grid--3cols">
+                <!-- ERP Ferme Agricole -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600&h=400&fit=crop" alt="ERP Ferme Agricole" loading="lazy">
+                    </div>
+                    <div class="card__icon">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">🌾 ERP Ferme Agricole</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                    <p>Gestion intégrée des parcelles, stocks d'intrants, récoltes et ventes. 
+                    Dashboard avec KPIs temps réel et alertes automatiques de rupture/péremption.</p>
+                    <div class="card-footer">
+                        <a href="#" class="github-link" aria-label="Code source sur GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i> Code source
+                        </a>
+                        <a href="#" class="demo-link" aria-label="Démo en ligne">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Démo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ERP Coopérative -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop" alt="ERP Coopérative Agricole" loading="lazy">
+                    </div>
+                    <div class="card__icon">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">🤝 ERP Coopérative</h3>
+                    <div class="tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                    <p>Gestion multi-adhérents, collecte de produits, paiements différés, 
+                    et mise en relation avec les acheteurs. Traçabilité complète.</p>
+                    <div class="card-footer">
+                        <a href="#" class="github-link" aria-label="Code source sur GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i> Code source
+                        </a>
+                        <a href="#" class="demo-link" aria-label="Démo en ligne">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Démo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- ERP Microfinance -->
+                <article class="card">
+                    <div class="card__image">
+                        <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600&h=400&fit=crop" alt="ERP Microfinance Agricole" loading="lazy">
+                    </div>
+                    <div class="card__icon">
+                        <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card__title">💰 ERP Microfinance</h3>
+                    <div class="tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">WTForms</span>
+                    </div>
+                    <p>Gestion des prêts en espèces ou en intrants, échéanciers automatiques, 
+                    remboursements, et suivi des impayés avec alertes.</p>
+                    <div class="card-footer">
+                        <a href="#" class="github-link" aria-label="Code source sur GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i> Code source
+                        </a>
+                        <a href="#" class="demo-link" aria-label="Démo en ligne">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Démo
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ========== IMPACT SECTION ========== -->
+        <section class="section">
+            <div class="impact__container">
+                <div class="impact__text">
+                    <h2 class="section__title">Impact mesuré</h2>
+                    <p class="section__subtitle">Les solutions que je développe cherchent à apporter des résultats concrets sur le terrain.</p>
+                </div>
+                <div class="impact__charts">
+                    <div class="chart">
+                        <canvas id="impactChart" width="300" height="250" role="img" aria-label="Graphique d'impact"></canvas>
+                        <p class="chart__caption">Réduction des pertes post-récoltes</p>
+                    </div>
+                    <div class="chart">
+                        <canvas id="techChart" width="300" height="250" role="img" aria-label="Répartition technique"></canvas>
+                        <p class="chart__caption">Stack technique utilisée</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="section contact">
+            <h2 class="section__title section__title--centered">Me contacter</h2>
+            <p class="section__subtitle">Parlons de votre projet ou d'une opportunité de travail</p>
+            
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:gisele.bahati@example.com" class="contact__link">
+                                gisele.bahati@example.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:+243812345678" class="contact__link">
+                                +243 812 345 678
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Goma, République Démocratique du Congo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h4>Disponibilité</h4>
+                            <p>Lundi - Vendredi, 9h - 18h (WAT)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dev.to">
+                            <i class="fab fa-dev" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Votre nom complet" required aria-label="Nom complet">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Votre adresse email" required aria-label="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Votre téléphone (optionnel)" aria-label="Téléphone">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Votre message" required aria-label="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Envoyer le message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>
+                &copy; 2026 Gisele BAHATI | Codé avec <i class="fas fa-heart" aria-hidden="true"></i> 
+                pour l'agriculture africaine
+            </p>
+            <p class="mt-2">
+                <small>Ingénieure Agronome & Développeuse Python - Solutions ERP sur mesure</small>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
