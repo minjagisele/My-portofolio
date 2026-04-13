@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
         new Chart(techCtx, {
             type: 'doughnut',
             data: {
-                labels: ['Python', 'Flask/Django', 'PostgreSQL', 'JavaScript', 'Docker'],
+                labels: ['Python', 'Flask', 'PostgreSQL', 'JavaScript', 'Docker', 'Reactjs'],
                 datasets: [{
-                    data: [40, 25, 20, 10, 5],
+                    data: [30, 25, 20, 10, 5, 10],
                     backgroundColor: ['#1B4332', '#2D6A4F', '#40916C', '#52B788', '#D4A373'],
                     borderWidth: 0
                 }]
